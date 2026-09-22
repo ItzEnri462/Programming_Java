@@ -5,6 +5,6 @@ public class Main {
     s.nome = "Davide";
     s.cognome = "Rossi";
     s.altezza = (float) 1.89;
-    s.peso = (float) 72.48;
+    s.eta = 18;
     }
 }
