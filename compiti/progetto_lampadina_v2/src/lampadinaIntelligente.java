@@ -18,4 +18,13 @@ public class lampadinaIntelligente {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getColore() {
+        return colore;
+    }
+    public String setColore(String colore) {
+        this.colore = colore;
+    }
+
+
 }
