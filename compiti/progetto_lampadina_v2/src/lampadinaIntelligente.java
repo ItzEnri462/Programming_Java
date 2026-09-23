@@ -32,4 +32,15 @@ public class lampadinaIntelligente {
     public void spegni() {
         this.accesa = false;
     }
+
+    public void aumentaIlluminazione() {
+        this.intensita += 10;
+        if (intensita > 100)
+            intensita = 100;
+    }
+    public void diminuisciIlluminazione() {
+        this.intensita -= 10;
+        if (intensita < 0)
+            intensita = 0;
+    }
 }
