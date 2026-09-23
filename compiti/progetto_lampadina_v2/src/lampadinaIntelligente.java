@@ -22,7 +22,7 @@ public class lampadinaIntelligente {
     public String getColore() {
         return colore;
     }
-    public String setColore(String colore) {
+    public void setColore(String colore) {
         this.colore = colore;
     }
 
