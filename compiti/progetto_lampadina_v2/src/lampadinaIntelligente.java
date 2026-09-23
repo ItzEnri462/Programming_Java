@@ -12,5 +12,10 @@ public class lampadinaIntelligente {
         this.colore = "bianco";
         this.accesa = false;
     }
-
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
