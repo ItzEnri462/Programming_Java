@@ -26,5 +26,10 @@ public class lampadinaIntelligente {
         this.colore = colore;
     }
 
-
+    public void accendi() {
+        this.accesa = true;
+    }
+    public void spegni() {
+        this.accesa = false;
+    }
 }
