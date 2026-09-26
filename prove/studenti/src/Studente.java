@@ -1,34 +1,34 @@
 public class Studente {
     String nome;
     String cognome;
-    float altezza;
+    double altezza;
     int eta;
-    float peso;
+    double peso;
 
     public Studente() {
         this.nome = " ";
         this.cognome = " ";
         this.eta = 0;
-        this.altezza = (float) 0.0;
+        this.altezza = 0.0;
         this.peso = 0;
     }
 
-    public Studente(String nome, String cognome, int eta, float altezza, float peso) {
+    public Studente(String nome, String cognome, int eta, double altezza, double peso) {
         this.nome = nome;
         this.cognome = cognome;
         if (this.eta <= 5)
             eta = 5;
         this.eta = eta;
         if (this.altezza <= 0.80)
-            altezza = (float) 0.80;
+            altezza = (double) 0.80;
         this.altezza = altezza;
         if (this.peso <= 15)
-            peso = (float) 15;
+            peso = 15.0;
         this.peso = peso;
     }
     public String toString () {
         String s = "I dati dello studente sono: ";
-        s += this.nome + ", " + this.cognome + ", " + this.eta + ", " + this.altezza + "," + this.peso + ".";
+        s += this.nome + " " + this.cognome + ", " + this.eta + " anni, " + this.altezza + "m," + this.peso + "kg.";
         return s;
     }
 
