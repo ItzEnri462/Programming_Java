@@ -5,18 +5,30 @@ public class Studente {
     int eta;
     float peso;
 
+    public Studente() {
+        this.nome = " ";
+        this.cognome = " ";
+        this.eta = 0;
+        this.altezza = (float) 0.0;
+        this.peso = 0;
+    }
+
     public Studente(String nome, String cognome, int eta, float altezza, float peso) {
         this.nome = nome;
         this.cognome = cognome;
         if (this.eta <= 5)
             eta = 5;
         this.eta = eta;
+        if (this.altezza <= 0.80)
+            altezza = (float) 0.80;
         this.altezza = altezza;
+        if (this.peso <= 15)
+            peso = (float) 15;
         this.peso = peso;
     }
     public String toString () {
         String s = "I dati dello studente sono: ";
-        s += this.nome + ", " + this.cognome + ", " + this.eta + ", " + this.altezza + ".";
+        s += this.nome + ", " + this.cognome + ", " + this.eta + ", " + this.altezza + "," + this.peso + ".";
         return s;
     }
 
@@ -30,6 +42,6 @@ public class Studente {
         else if (bmi >=25 && bmi < 30)
             return "Lo studente è sovrappeso";
         else
-            return "Valore non valido";
+            return "Lo studente è obeso";
     }
 }
