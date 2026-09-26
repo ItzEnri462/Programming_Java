@@ -9,4 +9,9 @@ public class Studente {
         eta=age;
         altezza=height;
     }
+    public String toString (){
+        String s = "I dati dello studente sono: ";
+        s += this.nome + ", " + this.cognome + ", " + this.eta + ", " + this.altezza + ".";
+        return s;
+    }
 }
